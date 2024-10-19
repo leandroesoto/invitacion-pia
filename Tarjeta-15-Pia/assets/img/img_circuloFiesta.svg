@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.5.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 120 120" style="enable-background:new 0 0 120 120;" xml:space="preserve">
+<style type="text/css">
+	.Sombra_x0020_paralela{fill:none;}
+	.Esquinas_x0020_redondeadas_x0020_2_x0020_pt_x002E_{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
+	.Reflejo_x0020_vivo_x0020_X{fill:none;}
+	.Bisel_x0020_suave{fill:url(#SVGID_1_);}
+	.Atardecer{fill:#FFFFFF;}
+	.Follaje_GS{fill:#FFDD00;}
+	.Pompadour_GS{fill-rule:evenodd;clip-rule:evenodd;fill:#51AEE2;}
+	.st0{fill:none;stroke:#E98B19;stroke-width:3;stroke-linecap:round;stroke-miterlimit:10;}
+</style>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-84.7489" y1="-135.1671" x2="-84.0418" y2="-134.46">
+	<stop  offset="0" style="stop-color:#E6E6EB"/>
+	<stop  offset="0.1738" style="stop-color:#E2E2E6"/>
+	<stop  offset="0.352" style="stop-color:#D5D4D8"/>
+	<stop  offset="0.5323" style="stop-color:#C0BFC2"/>
+	<stop  offset="0.7139" style="stop-color:#A4A2A4"/>
+	<stop  offset="0.8949" style="stop-color:#828282"/>
+	<stop  offset="1" style="stop-color:#6B6E6E"/>
+</linearGradient>
+<g>
+	<path class="st0" d="M40.2,47L21.6,96.9c0,0-1.5,3.7,2.4,3l48.6-19"/>
+	<ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 -28.1224 59.3504)" class="st0" cx="57.6" cy="63.6" rx="5.6" ry="23.9"/>
+	<path class="st0" d="M24.6,24.9c0,0,21.4-7.8,27.2,16.9c0,0,3.2,11.9-1.7,22.3"/>
+	<path class="st0" d="M58.1,71.2c0,0,24.6-14.3,32.4,10.6"/>
+	<line class="st0" x1="27.8" y1="37" x2="32.4" y2="41.1"/>
+	<line class="st0" x1="52.5" y1="22.5" x2="55.5" y2="16.9"/>
+	<line class="st0" x1="91.2" y1="21" x2="95.7" y2="25.1"/>
+	<line class="st0" x1="95.7" y1="53" x2="98.3" y2="59.9"/>
+	<line class="st0" x1="103.9" y1="74.9" x2="100.7" y2="80.3"/>
+	<line class="st0" x1="91.2" y1="94.3" x2="84.9" y2="98"/>
+	<line class="st0" x1="62.4" y1="98.9" x2="60.3" y2="92.4"/>
+	<line class="st0" x1="19.4" y1="64.1" x2="24.6" y2="59.5"/>
+	<path class="st0" d="M70.4,19.9c0,0-0.2,3.2-3.9,5c0,0-4.8,2.2,0,6.1c0,0,8.2,3.9,2.2,8.2c0,0-4.5,1.9-3.5,5.6"/>
+	<path class="st0" d="M92.9,42.3c0,0-2.6,2-6.3,0.3c0,0-4.7-2.2-4.6,4c0,0,2.4,8.8-4.8,7c0,0-4.4-2.2-6.5,1.1"/>
+</g>
+</svg>
