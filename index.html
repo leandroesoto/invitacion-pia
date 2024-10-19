@@ -66,6 +66,8 @@
 
 <body>
 
+  <!-- <audio id="player-musica-fondo" src="./assets/audio/Miley_Cyrus_TheClimb.mp3" loop></audio> -->
+
   <!-- Loader -->
   <div class="preloader-area">
   <div class="d-flex justify-content-center align-items-center h-100">
@@ -1196,7 +1198,7 @@
 
     <!-- Modal musica inicio -->
     
-      <script>
+      <!-- <script>
         // Al cargar abro modal
         prealoaderOption.on("load", function() {
           $('#modalMusica').modal({
@@ -1223,6 +1225,38 @@
 
           $('#modalMusica').modal('hide');
 
+        });
+      </script> -->
+
+      <!-- Modal musica inicio -->
+      <script>
+        // Al cargar abro el modal
+        prealoaderOption.on("load", function() {
+          $('#modalMusica').modal({
+            backdrop: 'static'
+          });
+        });
+
+        // Modifico el color del backdrop para este modal
+        $('#modalMusica').on('show.bs.modal', function(e) {
+          $('body').addClass("backdrop-modal-musica");
+        }).on('hidden.bs.modal', function(e) {
+          $('body').removeClass("backdrop-modal-musica");
+        });
+
+        // Btn play music modal
+        $('body').on('click touchstart', '#play-music-modal', function(e) {
+          e.preventDefault();
+
+          // Cambiar el estado del botón para iniciar la música
+          $('#play-pause-music').attr('data-estado-music', 'play');
+          animMusicAnimIcon.play();  // Animación del botón de música
+
+          // Reproducir el archivo MP3
+          audioPlayer.play();  // Reproduce el archivo de audio
+
+          // Cerrar el modal
+          $('#modalMusica').modal('hide');
         });
       </script>
 
@@ -1252,9 +1286,46 @@
 
 
 
+<!-- Musica de fondo -->
+<script>
+  // Reemplaza el reproductor de YouTube por un reproductor de audio local
+
+  // Crear el reproductor de audio
+  var audioPlayer = document.createElement('audio');
+  audioPlayer.id = 'player-musica-fondo';
+  audioPlayer.src = './assets/audio/Miley_Cyrus_TheClimb.mp3';  // Cambia por la ruta correcta del archivo MP3
+  audioPlayer.loop = true;  // Habilitar el loop
+  audioPlayer.volume = 0.8;  // Establecer volumen al 80%
+  document.body.appendChild(audioPlayer);  // Añadir el reproductor al cuerpo del documento
+
+  // Click en controlador de música
+  $('body').on('click', '#play-pause-music', function(e) {
+    e.preventDefault();
+
+    // Estado actual
+    var estadoMusic = $(this).attr('data-estado-music');
+
+    // Reproducir música
+    if (estadoMusic == 'pause') {
+      $(this).attr('data-estado-music', 'play');
+      animMusicAnimIcon.play();
+      audioPlayer.play();
+    }
+
+    // Pausar música
+    if (estadoMusic == 'play') {
+      $(this).attr('data-estado-music', 'pause');
+      audioPlayer.pause();
+      animMusicAnimIcon.stop();
+    }
+  });
+</script>
+
+
+
     
 
-    <!-- Musica de fondo -->
+    <!-- Musica de fondo
     <script>
       // 2. This code loads the IFrame Player API code asynchronously.
       var tag = document.createElement('script');
@@ -1272,7 +1343,7 @@
           height: '10',
           width: '10',
           playerVars: {
-            playlist: 'aJBRp_xFih0',
+            playlist: 'oPwL9XJ5ifw',
             loop: 1
           },
           events: {
@@ -1318,7 +1389,7 @@
 
 
       });
-    </script>
+    </script> -->
 
 
     <!-- Calcular posicion de reproductor en relacion a container centrado -->
